@@ -1,0 +1,149 @@
+.wrapperCalendar{
+    display: flex;
+    flex-direction: column;
+    align-items: end;    
+}
+
+.wrapper{
+    border-radius: 15px;
+    display: flex;
+    -webkit-box-shadow: 0px 5px 8px 7px rgba(34, 60, 80, 0.11);
+    -moz-box-shadow: 0px 5px 8px 7px rgba(34, 60, 80, 0.11);
+    box-shadow: 0px 5px 8px 7px rgba(34, 60, 80, 0.11);
+}
+
+.calendar{
+
+    background-color: white;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    box-sizing: border-box;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid #A3A7AD;
+    cursor: pointer;
+
+    .strDate{
+        margin-right: 5px;
+    }
+}
+
+.days{
+    display: flex;
+    width: 400px;
+    background-color: white;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.flexRow{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.month{
+    width: 100px;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 8px;
+    border: #A3A7AD solid 1px;
+    color: #349E55;
+    cursor: pointer;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.calendarMenu{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    
+}
+
+.wrapperDays{
+    height: 200px;
+    background-color: white;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.disabled{
+    color: #c2c4c5;
+    cursor: default !important;
+}
+
+.crsPointer{
+    cursor: pointer;
+}
+
+.day{
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+.day:hover{
+    background-color: rgba(7, 131, 46, 0.582);
+}
+
+.today{
+    border: 1px solid #349E55;
+}
+
+.selectDate{
+    background-color:rgba(52, 158, 85, 0.2);
+}
+.isRange{
+    background-color:rgba(52, 158, 85, 0.2);
+}
+.shoosenRange{
+    background-color: rgba(7, 131, 46, 0.582);
+}
+
+.relative{
+    position: fixed;
+}
+
+.SimpleChoice_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 100px;
+    border-radius: 8px;
+    overflow-y: auto;
+
+    background-color: white;       
+
+    -webkit-box-shadow: 0px 5px 51px 2px rgba(34, 60, 80, 0.08);
+    -moz-box-shadow: 0px 5px 51px 2px rgba(34, 60, 80, 0.08);
+    box-shadow: 0px 5px 51px 2px rgba(34, 60, 80, 0.08);
+}
+
+.SimpleChoice_itemLabel{
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid #EEF1F5;
+}
+.SimpleChoice_itemLabel:hover {
+    background-color: #349E5533;
+}

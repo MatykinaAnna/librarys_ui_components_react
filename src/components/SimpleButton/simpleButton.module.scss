@@ -1,0 +1,35 @@
+.wrapper{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    min-width: 100px;
+}
+
+.active{
+    background-color: #349E55;
+    cursor: pointer; 
+}
+
+.active:hover{
+    background-color: #348255;
+}
+
+.disabled{
+    background-color: #349E5599; 
+    cursor: auto; 
+}
+
+.small{
+    height: 40px;
+}
+.medium{
+    height: 48px;
+}
+.large{
+    height: 56px;
+}

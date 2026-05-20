@@ -1,0 +1,110 @@
+.wrapperCalendar{
+    display: flex;
+    flex-direction: column;
+    align-items: end;    
+}
+
+.wrapper{
+}
+
+.calendar{
+
+    background-color: white;
+    width: 120px;
+    display: flex;
+    padding: 5px;
+    box-sizing: border-box;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid #A3A7AD;
+    cursor: pointer;
+
+    .strDate{
+        margin-right: 5px;
+    }
+}
+
+.days{
+    display: flex;
+    width: 400px;
+    background-color: white;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.flexRow{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.month{
+    width: 100px;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 8px;
+    border: #A3A7AD solid 1px;
+    color: #349E55;
+    cursor: pointer;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.calendarMenu{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    
+}
+
+.wrapperDays{
+    height: 200px;
+    background-color: white;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.disabled{
+    color: #c2c4c5;
+    cursor: default !important;
+}
+
+.crsPointer{
+    cursor: pointer;
+}
+
+.day{
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+.day:hover{
+    background-color: rgba(52, 158, 85, 0.2);
+}
+
+.today{
+    border: 1px solid #349E55;
+}
+
+.selectDate{
+    background-color: #349E55;
+}
+
+.relative{
+    position: fixed;
+}
