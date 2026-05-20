@@ -1,5 +1,8 @@
 {
-  "name": "@matykina/React",
+  "name": "@MatykinaAnna/librarys_ui_components_react",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/MatykinaAnna"
+  },
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
