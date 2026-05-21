@@ -3,9 +3,17 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/MatykinaAnna"
   },
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "",
-  "main": "index.js",
+  "main": "dist/esm/index.js",
+  "module": "dist/esm/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/esm/vitest.config.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/esm/index.js"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",

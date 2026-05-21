@@ -51,7 +51,7 @@ const SimpleChoice = (props: SimpleChoiceProps) => {
     )
 }
 
-export interface CalendarProps {
+export interface CalendarIntervalProps {
     selectedDateStart: Date,
     selectedDateEnd: Date,
     year: number,
@@ -88,7 +88,7 @@ function useHover() {
   return {ref: ref, isHovered: isHovered};
 }
 
-const СalendarInterval = (props: CalendarProps) => {
+const СalendarInterval = (props: CalendarIntervalProps) => {
 
     const hoverRef = useHover().ref;
     const isHovered = useHover().isHovered;

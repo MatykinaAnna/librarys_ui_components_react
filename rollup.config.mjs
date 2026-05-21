@@ -8,14 +8,14 @@ import svg from 'rollup-plugin-svg'
 export default [{
   input: 'src/index.ts',
   output:[
-    {
-      file: 'dist/cjs/index.js',
-      format: 'cjs'
-    },
     // {
-    //   file: 'dist/esm/index.js',
-    //   format: 'esm'
-    // }
+    //   file: 'dist/cjs/index.js',
+    //   format: 'cjs'
+    // },
+    {
+      file: 'dist/esm/index.js',
+      format: 'esm'
+    }
   ],
   external: ['react'],
   plugins: [
