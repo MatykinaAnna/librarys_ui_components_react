@@ -2,14 +2,14 @@ import React from 'react';
 import styles from './simpleButton.module.scss'
 import classNames from "classnames";
 
-export interface ButtonProps {
+export interface SimpleButtonProps {
   size?: 'small' | 'medium' | 'large';
   label: string;
   disabled: boolean;
   onClick: (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
 }
 
-const SimpleButton = (props: ButtonProps) => {
+const SimpleButton = (props: SimpleButtonProps) => {
 
     function toClick(e: React.MouseEvent<HTMLDivElement, MouseEvent>){
         if (!props.disabled){

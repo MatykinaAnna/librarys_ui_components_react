@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
-    "target": "es5",
+    "target": "ESNext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -13,11 +12,11 @@
     "isolatedModules": true,
     "module": "ESNext",
     "declaration": true,
-    "declarationDir": "dist/esm",
-    //"declarationDir": "dist/cjs",
+    //"declarationDir": "dist/esm",
+    "declarationDir": "dist/cjs",
     "sourceMap": false,
     "outDir": "dist",
-    "moduleResolution": "node",
+    "moduleResolution": "Bundler",
     "allowSyntheticDefaultImports": true,
     "noEmit": true,
     "jsx": "react",

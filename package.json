@@ -3,27 +3,27 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/MatykinaAnna"
   },
-  "version": "1.0.4",
+  "version": "1.0.10",
   "description": "",
-  "main": "dist/esm/index.js",
+  "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "exports": {
     ".": {
-      "types": "./dist/esm/vitest.config.d.ts",
-      "import": "./dist/esm/index.js",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/cjs/index.js",
       "require": "./dist/esm/index.js"
     }
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c",
+    "build": "tsc --emitDeclarationOnly && rollup -c",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "devDependencies": {
     "@chromatic-com/storybook": "^5.1.1",
     "@rollup/plugin-terser": "^1.0.0",
@@ -34,6 +34,7 @@
     "@storybook/addon-vitest": "^10.3.3",
     "@storybook/react-vite": "^10.4.0",
     "@storybook/test": "^8.6.15",
+    "@types/node": "^25.9.1",
     "@types/react": "^19.2.14",
     "@vitest/browser-playwright": "^4.1.2",
     "@vitest/coverage-v8": "^4.1.2",
