@@ -1,6 +1,6 @@
 export * from './Calendar'
 export * from './MultipleChoice'
-export * from './pfotobox'
+export * from './Pfotobox'
 export * from './SimpleButton'
 export * from './SimpleChoice'
 export * from './СalendarChoosingYear'

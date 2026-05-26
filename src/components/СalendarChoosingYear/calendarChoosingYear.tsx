@@ -2,8 +2,8 @@ import React from 'react';
 import { useState } from 'react'
 import styles from './calendar.module.scss'
 
-import calendar from './icons/calendar.svg'
-import arrowTop from './icons/arrowTop.svg'
+import calendar from './assets/calendar.svg'
+import arrowTop from './assets/arrowTop.svg'
 
 import classNames from 'classnames'
 
@@ -71,7 +71,7 @@ export interface CalendarChoosingYearProps {
     toSelectDate: (date: Date) => void
 }
 
-const CalendarChoosingYear = (props: CalendarChoosingYearProps) => {
+export const CalendarChoosingYear = (props: CalendarChoosingYearProps): React.ReactElement => {
 
     const dataToString = function(date: Date){
         let dd = date.getDate()
@@ -361,5 +361,3 @@ const CalendarChoosingYear = (props: CalendarChoosingYearProps) => {
         </div>
     )
 }
-
-export default CalendarChoosingYear

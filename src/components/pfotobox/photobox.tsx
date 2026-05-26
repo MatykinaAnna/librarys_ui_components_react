@@ -3,7 +3,7 @@ import styles from './photobox.module.scss'
 import classNames from 'classnames'
 
 
-import close from './image/close.svg'
+import close from './assets/close.svg'
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 
 import { Map, View } from "ol";
@@ -31,7 +31,7 @@ export interface PhotoboxProps {
     }[]
 }
 
-const Photobox = (props: PhotoboxProps) => {
+export const Photobox = (props: PhotoboxProps): React.ReactElement => {
 
     const [сoordinatesForPopup, setCoordinatesForPopup] = useState('')
     const [imageArray, setImageArray] = useState(props.imageArray)
@@ -350,5 +350,3 @@ const Photobox = (props: PhotoboxProps) => {
         </>
     )
 }
-
-export default Photobox

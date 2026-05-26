@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/MatykinaAnna"
   },
-  "version": "1.0.10",
+  "version": "1.0.37",
   "description": "",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -12,7 +12,8 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/cjs/index.js",
       "require": "./dist/esm/index.js"
-    }
+    },
+    "./styles.css": "./dist/index.css"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -26,8 +27,10 @@
   "type": "module",
   "devDependencies": {
     "@chromatic-com/storybook": "^5.1.1",
+    "@rollup/plugin-image": "^3.0.3",
     "@rollup/plugin-terser": "^1.0.0",
     "@rollup/plugin-typescript": "^12.3.0",
+    "@rollup/plugin-url": "^8.0.2",
     "@storybook/addon-a11y": "^10.3.3",
     "@storybook/addon-docs": "^10.3.3",
     "@storybook/addon-onboarding": "^10.3.3",
@@ -40,13 +43,12 @@
     "@vitest/coverage-v8": "^4.1.2",
     "eslint-plugin-storybook": "^10.3.3",
     "playwright": "^1.58.2",
+    "postcss-url": "^10.1.4",
     "rollup": "^4.60.1",
     "rollup-plugin-dts": "^6.4.1",
     "rollup-plugin-inline-svg": "^3.0.3",
     "rollup-plugin-postcss": "^4.0.2",
-    "rollup-plugin-svg": "^2.0.0",
     "rollup-plugin-svgr": "^4.0.1",
-    "rollup-plugin-url": "^3.0.1",
     "sass": "^1.98.0",
     "storybook": "^10.3.3",
     "typescript": "^6.0.2",

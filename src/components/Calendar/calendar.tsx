@@ -3,8 +3,8 @@ import { useState } from 'react'
 import styles from './calendar.module.scss'
 import classNames from 'classnames'
 
-import arrowTop from './icons/arrowTop.svg'
-import calendar from './icons/calendar.svg'
+import arrowTopIconAsset from './assets/arrowTop.svg'
+import calendarIconAsset from './assets/calendar.svg'
 
 
 interface SimpleChoiceProps {
@@ -19,7 +19,7 @@ const SimpleChoice = (props: SimpleChoiceProps) => {
         return array.map((item)=>{
             return (
                 <>
-                    <div className={styles.itemLabel} onClick={()=>props.onClick(item)}>{item.label}</div>
+                    <div className={styles.SimpleChoice_itemLabel} onClick={()=>props.onClick(item)}>{item.label}</div>
                 </>
             )
         })
@@ -27,7 +27,7 @@ const SimpleChoice = (props: SimpleChoiceProps) => {
 
     return (
         <>
-            <div className={styles.wrapper}>
+            <div className={styles.SimpleChoice_wrapper}>
                 {renderArray(props.array)}
             </div>
         </>
@@ -54,7 +54,7 @@ export interface CalendarProps {
     toSelectDate: (date: Date) => void
 }
 
-const Calendar = (props: CalendarProps) => {
+export const Calendar = (props: CalendarProps): React.ReactElement => {
 
     const dataToString = function(date: Date){
         let dd = date.getDate()
@@ -248,7 +248,7 @@ const Calendar = (props: CalendarProps) => {
                 <div className={styles.calendarMenu}>
                     <div className={classNames(styles.flexRow, styles.month)} onClick={clickToWrapperMonth}>
                         <div>{dateString}</div>
-                        <div className={!isChoiceMonth ? styles.rotate : ''}><img src={arrowTop} alt='arrowTop'/></div>
+                        <div className={!isChoiceMonth ? styles.rotate : ''}><img src={arrowTopIconAsset} alt='arrowTop'/></div>
                     </div>
                     <div onClick={toClickToDay} className={props.year !== (new Date()).getFullYear() ? styles.disabled : styles.crsPointer}>
                         Сегодня
@@ -256,7 +256,7 @@ const Calendar = (props: CalendarProps) => {
                 </div>
 
                 <div className={styles.relative}>
-                    {isChoiceMonth && <SimpleChoice {...simpleChoiceProps} /> }
+                    {isChoiceMonth && <SimpleChoice {...simpleChoiceProps} />}
                 </div>
                 
 
@@ -307,12 +307,10 @@ const Calendar = (props: CalendarProps) => {
                     {dataToString(props.selectedDate)}
                 </div>
                 <div>
-                    <img src={calendar} alt="calendar" height={23} />
+                    <img src={calendarIconAsset} alt="calendar" height={23} />
                 </div>
             </div>
 
         </div>
     )
 }
-
-export default Calendar

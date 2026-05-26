@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState, type RefObject } from 'react'
 import styles from './calendarInterval.module.scss'
 
-import calendar from './icons/calendar.svg'
-import arrowTop from './icons/arrowTop.svg'
+import calendar from './assets/calendar.svg'
+import arrowTop from './assets/arrowTop.svg'
 
 import classNames from 'classnames'
 import React from 'react'
@@ -88,7 +88,7 @@ function useHover() {
   return {ref: ref, isHovered: isHovered};
 }
 
-const СalendarInterval = (props: CalendarIntervalProps) => {
+export const СalendarInterval = (props: CalendarIntervalProps): React.ReactElement => {
 
     const hoverRef = useHover().ref;
     const isHovered = useHover().isHovered;
@@ -491,5 +491,3 @@ const СalendarInterval = (props: CalendarIntervalProps) => {
         </div>
     )
 }
-
-export default СalendarInterval

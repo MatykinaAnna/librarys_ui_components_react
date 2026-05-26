@@ -1,3 +1,2 @@
-import CalendarChoosingYear from "./calendarChoosingYear";
-import type { CalendarChoosingYearProps } from "./calendarChoosingYear";
-export {CalendarChoosingYear, CalendarChoosingYearProps}
+export {CalendarChoosingYear} from "./calendarChoosingYear";
+export type {CalendarChoosingYearProps} from "./calendarChoosingYear";

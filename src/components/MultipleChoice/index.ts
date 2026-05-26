@@ -1,4 +1,2 @@
-import MultipleChoice from "./multipleСhoice";
-import { MultipleChoiceProps } from "./multipleСhoice";
-
-export {MultipleChoice, type MultipleChoiceProps} 
+export {MultipleChoice} from "./multipleСhoice";
+export type {MultipleChoiceProps} from "./multipleСhoice";

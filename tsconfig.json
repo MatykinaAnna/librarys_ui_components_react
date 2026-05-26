@@ -21,5 +21,6 @@
     "noEmit": true,
     "jsx": "react",
     "strictNullChecks": false
-  }
+  },
+  "include": ["src/**/*", "global.d.ts"],
 }

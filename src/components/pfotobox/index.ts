@@ -1,4 +1,2 @@
-import Photobox from './photobox'
-import {PhotoboxProps} from './photobox'
-
-export {Photobox, type PhotoboxProps} 
+export {Photobox} from "./photobox";
+export type {PhotoboxProps} from "./photobox";

@@ -1,3 +1,2 @@
-import CalendarInterval from './calendarInterval'
-import type { CalendarIntervalProps } from "./calendarInterval";
-export {CalendarInterval, CalendarIntervalProps}
+export {СalendarInterval} from "./calendarInterval";
+export type {CalendarIntervalProps} from "./calendarInterval";

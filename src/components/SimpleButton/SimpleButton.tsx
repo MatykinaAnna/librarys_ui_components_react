@@ -9,7 +9,7 @@ export interface SimpleButtonProps {
   onClick: (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
 }
 
-const SimpleButton = (props: SimpleButtonProps) => {
+export const SimpleButton = (props: SimpleButtonProps): React.ReactElement => {
 
     function toClick(e: React.MouseEvent<HTMLDivElement, MouseEvent>){
         if (!props.disabled){
@@ -26,5 +26,3 @@ const SimpleButton = (props: SimpleButtonProps) => {
             </div>    
     </>
 }
-
-export default SimpleButton

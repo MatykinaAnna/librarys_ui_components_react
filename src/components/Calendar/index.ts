@@ -1,4 +1,2 @@
-import Calendar from "./calendar";
-import type { CalendarProps } from "./calendar";
-
-export {Calendar, CalendarProps}
+export {Calendar} from "./calendar";
+export type {CalendarProps} from "./calendar";

@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { fn } from 'storybook/test';
 
-import СalendarInterval from '../components/СalendarInterval/calendarInterval';
+import {СalendarInterval} from '../components/СalendarInterval/calendarInterval';
 
 const meta = {
   title: 'Example/СalendarInterval',

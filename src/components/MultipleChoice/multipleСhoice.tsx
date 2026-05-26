@@ -3,7 +3,7 @@ import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import styles from './multipleСhoice.module.scss'
 import classNames from "classnames";
 
-import danger from './icons/danger.svg'
+import danger from './assets/danger.svg'
 
 interface ButtonProps {
   size?: 'small' | 'medium' | 'large';
@@ -65,7 +65,7 @@ export interface MultipleChoiceProps {
     errorText?: string             //текст ошибки, если нажата кнопка применить при невыделенных объектах
 }
 
-const MultipleChoice = (props: MultipleChoiceProps) => {
+export const MultipleChoice = (props: MultipleChoiceProps): React.ReactElement => {
 
     const filteredListRef = useRef<{
         id: number; name: string;
@@ -478,5 +478,3 @@ const MultipleChoice = (props: MultipleChoiceProps) => {
         </div>
     </>
 }
-
-export default MultipleChoice

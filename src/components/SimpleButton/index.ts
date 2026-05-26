@@ -1,4 +1,2 @@
-import SimpleButton from "./SimpleButton";
-import type SimpleButtonProps from "./SimpleButton";
-
-export {SimpleButton, SimpleButtonProps}
+export {SimpleButton} from "./SimpleButton";
+export type {SimpleButtonProps} from "./SimpleButton";

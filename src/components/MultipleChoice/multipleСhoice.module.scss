@@ -52,7 +52,7 @@ input[type="checkbox"]{
         cursor: pointer;
     }
 input[type="checkbox"]:checked{
-    background-image: url('./icons/checked.svg');
+    background-image: url('./assets/checked.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -67,7 +67,7 @@ label{
     width: 20px;
     margin-right: 15px;
     cursor: pointer;
-    background-image: url('./icons/arrow.svg');
+    background-image: url('./assets/arrow.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -130,7 +130,7 @@ label{
 
 .partialSelection{
     border: 1px solid #349E55 !important;
-    background-image: url('./icons/partialSelection.svg');
+    background-image: url('./assets/partialSelection.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;

@@ -9,7 +9,7 @@ export interface SimpleChoiceProps {
     }) => void;
 }
 
-const SimpleChoice = (props: SimpleChoiceProps) => {
+export const SimpleChoice = (props: SimpleChoiceProps): React.ReactElement => {
 
     const renderArray = function(array: {label: string}[]){
         return array.map((item)=>{
@@ -29,5 +29,3 @@ const SimpleChoice = (props: SimpleChoiceProps) => {
         </>
     )
 }
-
-export default SimpleChoice

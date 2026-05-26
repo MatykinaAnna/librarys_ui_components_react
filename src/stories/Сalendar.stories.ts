@@ -1,12 +1,12 @@
-import type { Meta, StoryObj  } from '@storybook/react-vite';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { fn } from 'storybook/test';
 
-import Calendar from '../components/Calendar/calendar';
+import {Calendar} from '../components/Calendar/calendar';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Example/Calendar',
+  title: 'Example/Сalendar',
   component: Calendar,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
